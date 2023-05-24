@@ -34,3 +34,28 @@ function fullName(name,surname) {
 
 console.log(fullName('Sibusiso','Dyan'))
  
+
+let firstName ='Sibusiso';
+let  lastName='Dyan';
+let age = 23;
+let listOfSibject =['English','Afrikaans','Mathematics','Life Orientation','Geography','Business Studies','History'];
+let address ={
+ StreetName:'Pinetree crescent',
+ StreetNumber: 342544,
+Suburb:'Goodwood',
+city:'Cape Town',
+country:'South Africa'
+};
+
+console.log(`
+first Name : ${firstName} 
+last Name :${lastName}
+age:${age}
+ 
+Street Name: ${address.StreetName} 
+Street Number: ${address.StreetNumber}
+ Suburb:${address.Suburb} 
+ city :${address.city}
+  country:${address.country}`);
+
+ 
