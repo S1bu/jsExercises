@@ -28,34 +28,61 @@ ihoisting -->intepreter that moves the declaration of function and places it bef
 
 variable scoping-->determining the accessablilty of a variable
 */
-function fullName(name,surname) {
-    console.log(name,surname)
-}
+// function fullName(name,surname) {
+//     console.log(name,surname)
+// }
 
-console.log(fullName('Sibusiso','Dyan'))
+// console.log(fullName('Sibusiso','Dyan'))
  
 
-let firstName ='Sibusiso';
-let  lastName='Dyan';
-let age = 23;
-let listOfSibject =['English','Afrikaans','Mathematics','Life Orientation','Geography','Business Studies','History'];
-let address ={
- StreetName:'Pinetree crescent',
- StreetNumber: 342544,
-Suburb:'Goodwood',
-city:'Cape Town',
-country:'South Africa'
-};
+// let firstName ='Sibusiso';
+// let  lastName='Dyan';
+// let age = 23;
+// let listOfSibject =['English','Afrikaans','Mathematics','Life Orientation','Geography','Business Studies','History'];
+// let address ={
+//  StreetName:'Pinetree crescent',
+//  StreetNumber: 342544,
+// Suburb:'Goodwood',
+// city:'Cape Town',
+// country:'South Africa'
+// };
 
-console.log(`
-first Name : ${firstName} 
-last Name :${lastName}
-age:${age}
+// console.log(`
+// first Name : ${firstName} 
+// last Name :${lastName}
+// age:${age}
  
-Street Name: ${address.StreetName} 
-Street Number: ${address.StreetNumber}
- Suburb:${address.Suburb} 
- city :${address.city}
-  country:${address.country}`);
+// Street Name: ${address.StreetName} 
+// Street Number: ${address.StreetNumber}
+//  Suburb:${address.Suburb} 
+//  city :${address.city}
+//   country:${address.country}`);
 
  
+
+  function btnResult() {
+    let number_1 =parseInt( document.querySelector('#number_1').value);
+    let operator =( document.querySelector('#operator').value);
+    let number_2 =parseInt( document.querySelector('#number_2').value);
+
+    if (operator === '+') {
+        let calculation=number_1 + number_2;
+      document.querySelector('.result').innerHTML=`${calculation}`;
+ 
+    } if (operator === '-') {
+        let calculation=number_1 - number_2;
+      document.querySelector('.result').innerHTML=`${calculation}`;
+        console.log(number_1 - number_2);
+    } if (operator === '*') {
+        console.log(number_1 * number_2);
+    }if (operator === '/') {
+        console.log(number_1 / number_2);
+    }
+     else {
+        console.log('Enter valid inputs')
+    } {
+        
+    }
+  
+// console.log(`${calculation}`);
+  }

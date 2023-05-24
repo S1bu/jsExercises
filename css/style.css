@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:darkslategrey;
+}
+
+.container{
+    width: 500px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    
+}
+ 
+.col-right{
+    border: 1px solid black;
+    float: right;
+    width: 50%;
+}
+ 
+.col-left{
+    border: 1px solid black;
+    float: left;
+    width: 50%;
+}
