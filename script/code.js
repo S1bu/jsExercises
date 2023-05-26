@@ -28,34 +28,60 @@ ihoisting -->intepreter that moves the declaration of function and places it bef
 
 variable scoping-->determining the accessablilty of a variable
 */
-function fullName(name,surname) {
-    console.log(name,surname)
+// function fullName(name,surname) {
+//     console.log(name,surname)
+// }
+
+// console.log(fullName('Sibusiso','Dyan'))
+ 
+
+// let firstName ='Sibusiso';
+// let  lastName='Dyan';
+// let age = 23;
+// let listOfSibject =['English','Afrikaans','Mathematics','Life Orientation','Geography','Business Studies','History'];
+// let address ={
+//  StreetName:'Pinetree crescent',
+//  StreetNumber: 342544,
+// Suburb:'Goodwood',
+// city:'Cape Town',
+// country:'South Africa'
+// };
+
+// console.log(`
+// first Name : ${firstName} 
+// last Name :${lastName}
+// age:${age}
+ 
+// Street Name: ${address.StreetName} 
+// Street Number: ${address.StreetNumber}
+//  Suburb:${address.Suburb} 
+//  city :${address.city}
+//   country:${address.country}`);
+
+ 
+
+function calculate() {
+  let num1 = parseInt(document.querySelector('.number1').value);
+  let num2 = parseInt(document.querySelector('.number2').value);
+  let operator = (document.querySelector('.operator').value);
+
+  switch (operator) {
+      case "+": 
+      document.querySelector('.output').innerHTML= num1 + num2; 
+          break;
+      case "-":
+          document.querySelector('.output').innerHTML= num1 - num2; 
+          break;
+      case "*":
+          document.querySelector('.output').innerHTML= num1 * num2; 
+          break;
+      case "/":
+          document.querySelector('.output').innerHTML= num1 / num2; 
+          break;
+      default:
+          document.querySelector('.output').innerHTML='provide valid inputs'; 
+       
+  }
+  // document.querySelector('.output').innerHTML=; output
+ 
 }
-
-console.log(fullName('Sibusiso','Dyan'))
- 
-
-let firstName ='Sibusiso';
-let  lastName='Dyan';
-let age = 23;
-let listOfSibject =['English','Afrikaans','Mathematics','Life Orientation','Geography','Business Studies','History'];
-let address ={
- StreetName:'Pinetree crescent',
- StreetNumber: 342544,
-Suburb:'Goodwood',
-city:'Cape Town',
-country:'South Africa'
-};
-
-console.log(`
-first Name : ${firstName} 
-last Name :${lastName}
-age:${age}
- 
-Street Name: ${address.StreetName} 
-Street Number: ${address.StreetNumber}
- Suburb:${address.Suburb} 
- city :${address.city}
-  country:${address.country}`);
-
- 
