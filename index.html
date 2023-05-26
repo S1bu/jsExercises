@@ -4,76 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- external css -->
-<link rel="stylesheet" href="./css/style.css">
-<!-------------- -->
- 
-    <title>Question 3</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>jsExercise</title>
 </head>
-<body>
-
+<body> 
     <div class="container">
-        <!-- 1st number -->
-        <div class="row">
-          <div class="col"><label >1st Number:</label></div>
-          <div class="col"><input  class="number1"></div>
-      
-        </div>
-         <!-- operator -->
-         <div class="row">
-          <div class="col"><label >operator:</label></div>
-          <div class="col"><input class="operator"><!--operator--></div>
-        </div>
-          <!-- 2nd number -->
-          <div class="row">
-            <div class="col"><label  >2nd Number:</label></div>
-            <div class="col"><input  class="number2"><!--input number 2--></div>
-          </div>
-          <!-- output -->
-          <div class="row ">
-         
-            <div class="col"><div class="output" ><!--output--></div>
-            <div class="show">
-
-            </div>
-          </div>
-
-          <!-- button -->
-          <div class="row ">
-      
-            <div class="col"><button onclick="calculate()">calculate</button></div>
-          </div>
-        </div>
-<!----------------------------------------------------------->
-        <!-- <label class="label">Enter 1st Number:</label>
-        <br>
-        <br>
-        <input type="text" class="number1">--input number 1--
-        <br>
-        <br>
-        - operator --
-        <label class="label">Enter an operator:</label>
-        <br>
-        <br>
-        <input type="text" class="operator">-operator--<br>
-        <br>
-        - 2nd number --
-        <label class="label">Enter 2nd Number:</label>
-        <br>
-        <br>
-        <input type="text" class="number2">-input number 2--
-        <br>
-        <br>
-          <label><span style="color:white">Enter 2nd Number:</span> </label>--dummy input--
-      <br>
-      <br>
-          <div   class="output"></div>--output--
-        <br>
-        <br>
-        <label><span style="color:white">Enter 2nd Number:</span> </label>--dummy input--
-        <button onclick="calculate()">calculate</button> -->
- 
-
+        <form >
+            <p>  
+                <label for="number1"><b>Number 1:</b></label>
+                <input type="text" id="number_1" required>
+            </p>
+            <p>  
+               
+                <label for="operator"><b>Operator:</b></label>
+                <input type="text" id="operator" required>
+            </p>
+            <p>  
+               
+                <label for="operator"> <b>Number 2 :</b></label>
+                <input type="text" id="number_2" required>
+            </p>
+            <p>  
+                <input    class="result" placeholder="0">
+                <button id="btn" onclick="btnResult()">Display</button>
+            </p>
+          
+        </form>
+    </div>
+    <!-- js -->
     <script src="./script/code.js"></script>
 </body>
 </html>
+
+
+<!---
+
+-->
