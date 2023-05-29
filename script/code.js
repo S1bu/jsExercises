@@ -83,7 +83,7 @@ variable scoping-->determining the accessablilty of a variable
  
 // }
 
-// 4.
+/*************Question 4.****************/ 
 
  (function () {
     let subject = 'Programming';
@@ -97,4 +97,16 @@ variable scoping-->determining the accessablilty of a variable
     }
  })();
 
+ /***********QUESTION 5*******************/
  
+ 
+let person = [{
+name: 'Mish-Al',
+dob: '2020-05-31'
+}]
+let today = new Date()
+let birthday = new Date(person[0].dob)
+ 
+console.log(birthday.getDate() - today.getDate() + " days")
+
+/*************Question 6.*******************/
