@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css  -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>jsExercise</title>
+<!-- external css -->
+<link rel="stylesheet" href="./css/style.css">
+<!-------------- -->
+ 
+    <title>Question 3</title>
 </head>
-<body> 
+<body>
+
     <div class="container">
-        <form >
-            <p>  
-                <label for="number1"><b>Number 1:</b></label>
-                <input type="text" id="number_1" required>
-            </p>
-            <p>  
-               
-                <label for="operator"><b>Operator:</b></label>
-                <input type="text" id="operator" required>
-            </p>
-            <p>  
-               
-                <label for="operator"> <b>Number 2 :</b></label>
-                <input type="text" id="number_2" required>
-            </p>
-            <p>  
-                <input    class="result" placeholder="0">
-                <button id="btn" onclick="btnResult()">Display</button>
-            </p>
-          
-        </form>
-    </div>
-    <!-- js -->
+        <!-- 1st number -->
+        <div class="row">
+          <div class="col"><label >1st Number:</label></div>
+          <div class="col"><input  class="number1"></div>
+      
+        </div>
+         <!-- operator -->
+         <div class="row">
+          <div class="col"><label >operator:</label></div>
+          <div class="col"><input class="operator"><!--operator--></div>
+        </div>
+          <!-- 2nd number -->
+          <div class="row">
+            <div class="col"><label  >2nd Number:</label></div>
+            <div class="col"><input  class="number2"><!--input number 2--></div>
+          </div>
+          <!-- output -->
+          <div class="row ">
+         
+            <div class="col"><div class="output" ><!--output--></div>
+            <div class="show">
+
+            </div>
+          </div>
+
+          <!-- button -->
+          <div class="row ">
+      
+            <div class="col"><button onclick="calculate()">calculate</button></div>
+          </div>
+        </div>
+
+ 
+
     <script src="./script/code.js"></script>
 </body>
 </html>
-
-
-<!---
-
--->

@@ -58,31 +58,27 @@ variable scoping-->determining the accessablilty of a variable
 //  city :${address.city}
 //   country:${address.country}`);
 
- 
+function calculate() {
+    let num1 = parseInt(document.querySelector('.number1').value);
+    let num2 = parseInt(document.querySelector('.number2').value);
+    let operator = (document.querySelector('.operator').value);
 
-  function btnResult() {
-    let number_1 =parseInt( document.querySelector('#number_1').value);
-    let operator =( document.querySelector('#operator').value);
-    let number_2 =parseInt( document.querySelector('#number_2').value);
-
-    if (operator === '+') {
-        let calculation=number_1 + number_2;
-      document.querySelector('.result').innerHTML=`${calculation}`;
+    switch (operator) {
+        case "+": 
+        document.querySelector('.output').innerHTML= num1 + num2; 
+            break;
+        case "-":
+            document.querySelector('.output').innerHTML= num1 - num2; 
+            break;
+        case "*":
+            document.querySelector('.output').innerHTML= num1 * num2; 
+            break;
+        case "/":
+            document.querySelector('.output').innerHTML= num1 / num2; 
+            break;
+        default:
+            document.querySelector('.output').innerHTML='provide valid inputs'; 
+         
+    }
  
-    } if (operator === '-') {
-        let calculation=number_1 - number_2;
-      document.querySelector('.result').innerHTML=`${calculation}`;
-        console.log(number_1 - number_2);
-    } if (operator === '*') {
-        console.log(number_1 * number_2);
-    }if (operator === '/') {
-        console.log(number_1 / number_2);
-    }
-     else {
-        console.log('Enter valid inputs')
-    } {
-        
-    }
-  
-// console.log(`${calculation}`);
-  }
+}
